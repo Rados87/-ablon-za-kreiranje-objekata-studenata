@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    class Student {
+      constructor(name, address, phone, course) {
+        this.name = name
+        this.address = address
+        this.phone = phone
+        this.course = course
+      }
+
+      getInfo() {
+        return "Name: " + this.name + "\n" +
+          "Address: " + this.address + "\n" +
+          "Phone: " + this.phone + "\n" +
+          "Course: " + this.course;
+      }
+    }
+
+    // Kreiranje objekata
+    const student1 = new Student("Jovan Markovic", "Durmitorska 22", "065/5556879", "Matematika")
+    const student2 = new Student("Stefan Zivkovic", "Matice Srpske 32", "063/458794", "Istorija")
+    const student3 = new Student("Djordje Petrovic", "Zvecanska 32", "063/2568789", "Geografija")
+
+    // Pozivanje Metode
+    console.log(student1.getInfo())
+    console.log(student2.getInfo())
+    console.log(student3.getInfo())
+  </script>
+</body>
+
+</html>
